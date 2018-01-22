@@ -22,11 +22,12 @@ end
   # return the second element in the 4th of July array
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-holiday_hash.each do  |holiday, supplies|
-if holiday == :winter
-  holiday.each do |key,value|
-    value << supply
-end
+    holiday_hash.each do  |holiday, supplies|
+        if holiday == :winter
+          holiday.each do |key,value|
+            value << supply
+    end
+  end
 end
 holiday_hash
 end
